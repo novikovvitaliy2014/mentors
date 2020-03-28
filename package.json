@@ -1,0 +1,53 @@
+{
+  "name": "delivery",
+  "version": "0.0.1",
+  "description": "help with delivery",
+  "productName": "delivery",
+  "cordovaId": "n",
+  "capacitorId": "",
+  "author": "novikov.vitaliy.2014@gmail.com",
+  "private": true,
+  "scripts": {
+    "lint": "eslint --ext .js,.vue src",
+    "test": "echo \"No test specified\" && exit 0"
+  },
+  "dependencies": {
+    "@quasar/extras": "^1.0.0",
+    "axios": "^0.19.2",
+    "babel-loader": "^8.1.0",
+    "css-loader": "^3.4.2",
+    "firebase": "^7.13.1",
+    "json-loader": "^0.5.7",
+    "node-sass": "^4.13.1",
+    "quasar": "^1.0.0",
+    "sass-loader": "^8.0.2",
+    "style-loader": "^1.1.3",
+    "stylus-loader": "^3.0.2",
+    "vue-i18n": "^8.16.0",
+    "vue-loader": "^15.9.1",
+    "vuex": "^3.1.3"
+  },
+  "devDependencies": {
+    "@quasar/app": "^1.0.0",
+    "babel-eslint": "^10.0.1",
+    "eslint": "^6.8.0",
+    "eslint-config-standard": "^14.1.0",
+    "eslint-loader": "^3.0.3",
+    "eslint-plugin-import": "^2.14.0",
+    "eslint-plugin-node": "^11.0.0",
+    "eslint-plugin-promise": "^4.0.1",
+    "eslint-plugin-standard": "^4.0.0",
+    "eslint-plugin-vue": "^6.1.2"
+  },
+  "engines": {
+    "node": ">= 10.18.1",
+    "npm": ">= 6.13.4",
+    "yarn": ">= 1.21.1"
+  },
+  "browserslist": [
+    "last 1 version, not dead, ie >= 11"
+  ],
+  "resolutions": {
+    "@babel/parser": "7.7.5"
+  }
+}

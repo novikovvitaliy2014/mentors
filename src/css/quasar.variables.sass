@@ -1,0 +1,117 @@
+// Quasar SCSS (& Sass) Variables
+// --------------------------------------------------
+// To customize the look and feel of this app, you can override
+// the Sass/SCSS variables found in Quasar's source Sass/SCSS files.
+
+// Check documentation for full list of Quasar variables
+
+// Your own variables (that are declared here) and Quasar's own
+// ones will be available out of the box in your .vue/.scss/.sass files
+
+// It's highly recommended to change the default colors
+// to match your app's branding.
+// Tip: Use the "Theme Builder" on Quasar's documentation website.
+
+$primary: #4CAF50
+$secondary: #f91
+$accent   : #9C27B0
+$telegram : #0088cc
+$facebook : #3b5998
+$positive : #027BE3
+$negative : #C10015
+$info     : #31CCEC
+$warning  : #F2C037
+
+$gray:  hsla(0, 0%, 18%, 1)
+$darkgreen: #1B5E20
+$green: #4CAF50
+$lightgreen: rgb(233, 245, 234)
+
+$darkbrown: #332222
+$brown: #795548
+$lightbrown: #D7CCC8
+
+$color-base: $gray
+
+$color-dark: $darkgreen
+$color-main: $green
+$color-light: $lightgreen
+
+$color-dark2: $darkbrown
+$color-main2: $brown
+$color-light2: $lightbrown
+
+$gap : 1%
+//width gap is 5px for full width=320px, 15px for full width=1000px
+$col : 8.3333333333%
+$col-1 : $col - $gap
+$col-2 : $col*2 - $gap
+$col-3 : $col*3 - $gap
+$col-4 : $col*4 - $gap
+$col-5 : $col*5 - $gap
+$col-6 : $col*6 - $gap
+$col-7 : $col*7 - $gap
+$col-8 : $col*8 - $gap
+$col-9 : $col*9 - $gap
+$col-10 : $col*10 - $gap
+$col-11 : $col*11 - $gap
+$col-12 : $col*12 - $gap
+
+$font-load: 'Comfortaa','Verdana', sans-serif
+$font-heading: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen, Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif
+$font-base: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen, Ubuntu, Cantarell, Fira Sans, Droid Sans,Arial, Helvetica Neue, sans-serif
+
+$font-size-base: 1rem
+$line-height-base: 1.618rem
+$line-height-max: $line-height-base * 1.618 //2.618rem
+$line-max-gap: $line-height-max - $line-height-base // 1rem
+$line-gap: $line-max-gap/5 // 0.2rem
+
+$line-height-h6: $line-height-base     // 1.618rem
+$line-height-h5: $line-height-base + $line-gap*1 // 1.818rem
+$line-height-h4: $line-height-base + $line-gap*2 // 2.018rem
+$line-height-h3: $line-height-base + $line-gap*3 // 2.218rem
+$line-height-h2: $line-height-base + $line-gap*4 // 2.418rem
+$line-height-h1: $line-height-base + $line-gap*5 // 2.618rem
+
+$font-size-h6: $font-size-base
+$font-size-h5: $font-size-base + $line-gap // 1.2rem
+$font-size-h4: $font-size-base + $line-gap*2 // 1.4rem
+$font-size-h3: $font-size-base + $line-gap*3 // 1.6rem
+$font-size-h2: $font-size-base + $line-gap*4 // 1.8rem
+$font-size-h1: $font-size-base + $line-gap*5 // 2rem
+@mixin mobile
+  @media (max-width: 480px)
+    @content
+
+@mixin tab
+  @media (min-width: 480px) and (max-width: 840px)
+    @content
+
+@mixin desk
+  @media (min-width: 841px)
+    @content
+
+@mixin mobile-tab
+  @media (max-width: 840px)
+    @content
+
+@mixin tab-desk
+  @media (min-width: 480px)
+    @content
+
+@mixin container( $mobile-container: $col-11, $tab-container: $col-11, $desk-container: $col-10, $max-width: 1100px)
+  width: $mobile-container
+  margin: 0 auto
+  @include tab
+    width: $tab-container
+  @include desk
+    width: $desk-container
+    max-width: $max-width
+
+@mixin font-size-adaptive( $font-mobile, $font-tab, $font-desk )
+  font-size: $font-mobile
+  @include tab
+    font-size: $font-tab
+  @include desk
+    font-size: $font-desk
