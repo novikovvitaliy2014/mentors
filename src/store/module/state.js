@@ -1,7 +1,8 @@
 export default {
-  newPlayer: {},
-  matches: [],
-  globalBtns: true,
-  // subscribeBtnTel: true,
-  errorAlert: true
+  newVolunteer: {},
+  newReceiver: {},
+  volunteers: [],
+  receivers: [],
+  chosenReceiverTel: null,
+  chosenVolunteerTel: null
 }

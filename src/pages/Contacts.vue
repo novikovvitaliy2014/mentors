@@ -2,9 +2,9 @@
   <q-page class="contacts row">
     <section class="contacts__container col-8">
       <h1>{{ $t('contacts') }}</h1>
-      <p>Email:  <span>incitysport.com@gmail.com</span></p>
-      <p>Telegram:  <a href="https://t.me/findplayers">https://t.me/findplayers</a></p>
-      <p>Tel:  <a href="tel:+380997342723">+38(099) 734 27 23</a></p>
+      <p>Email:  <span>social.support@gmail.com</span></p>
+      <!-- <p>Telegram:  <a href="https://t.me/findplayers">https://t.me/findplayers</a></p> -->
+      <p>Tel:  <a href="tel: 0 800 348 73 73">0 800 348 73 73</a></p>
     </section>
   </q-page>
 </template>

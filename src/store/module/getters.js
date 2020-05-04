@@ -1,18 +1,15 @@
-export const getMatches = (state) => {
-  return state.matches
+export const getVolunteers = (state) => {
+  return state.volunteers
 }
-export const globalBtns = (state) => {
-  return state.globalBtns
+export const getReceivers = (state) => {
+  return state.receivers
 }
-// export const subscribeBtnTel = (state) => {
-//   return state.subscribeBtnTel
-// }
+export const getReceiverTel = (state) => {
+  return state.chosenReceiverTel
+}
+export const getVolunteerTel = (state) => {
+  return state.chosenVolunteerTel
+}
 export const errorAlert = (state) => {
   return state.errorAlert
 }
-// export const getModuleMatches = (state) => {
-//   return state.module.matches
-// }
-// export const newPlayer = (state) => {
-//   return state.newPlayer
-// }

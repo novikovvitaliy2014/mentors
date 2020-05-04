@@ -1,21 +1,20 @@
 <template>
   <q-page >
     <about/>
-    <matches></matches>
+    <registrations/>
+    <data-admin/>
   </q-page>
 </template>
 
-<style lang="stylus">
-
-</style>
-
 <script>
-import Matches from '../components/main/Matches.vue'
+import Registrations from '../components/main/Registrations.vue'
 import About from '../components/main/About.vue'
+import DataAdmin from '../components/main/Data.vue'
 export default {
   components: {
-    Matches,
-    About
+    Registrations,
+    About,
+    DataAdmin
   }
 }
 </script>
